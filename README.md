@@ -13,7 +13,7 @@
 
 
 ## Citation
-If you use MIRNet, please consider citing:
+If you use MPRNet, please consider citing:
 
     @article{Zamir2021MPRNet,
         title={Multi-Stage Progressive Image Restoration},
