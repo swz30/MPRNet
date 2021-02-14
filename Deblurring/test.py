@@ -58,8 +58,21 @@ with torch.no_grad():
         input_    = data_test[1].cuda()
         filenames = data_test[2]
 
+        # Padding in case images are not multiples of 8
+        if dataset == 'RealBlur_J' or dataset == 'RealBlur_R':
+            factor = 8
+            h,w = input_.shape[2], input_.shape[3]
+            H,W = ((h+factor)//factor)*factor, ((w+factor)//factor)*factor
+            padh = H-h if h%factor!=0 else 0
+            padw = W-w if w%factor!=0 else 0
+            input_ = F.pad(input_, (0,padw,0,padh), 'reflect')
+
         restored = model_restoration(input_)
         restored = torch.clamp(restored[0],0,1)
+
+        # Unpad images to original dimensions
+        if dataset == 'RealBlur_J' or dataset == 'RealBlur_R':
+            restored = restored[:,:,:h,:w]
 
         restored = restored.permute(0, 2, 3, 1).cpu().detach().numpy()
 
