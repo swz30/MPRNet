@@ -34,3 +34,8 @@ python test.py --dataset RealBlur_J
 python test.py --dataset RealBlur_R
 ```
 
+#### To reproduce PSNR/SSIM scores of the paper, run
+```
+evaluate_PSNR_SSIM.m 
+```
+
