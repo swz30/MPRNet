@@ -34,8 +34,8 @@ python test.py --dataset RealBlur_J
 python test.py --dataset RealBlur_R
 ```
 
-#### To reproduce PSNR/SSIM scores of the paper, run
+#### To reproduce PSNR/SSIM scores of the paper on GoPro and HIDE datasets, run
 ```
-evaluate_PSNR_SSIM.m 
+evaluate_GOPRO_HIDE.m 
 ```
 
