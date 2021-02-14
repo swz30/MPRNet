@@ -9,7 +9,7 @@
 python test_SIDD.py --save_images
 ```
 #### Testing on DND dataset
-- Download DND Benchmark Data from [here](https://noise.visinf.tu-darmstadt.de/downloads/) and place it in `./Datasets/DND/`
+- Download DND Benchmark Data from [here](https://noise.visinf.tu-darmstadt.de/downloads/) and place it in `./Datasets/DND/test/`
 - Run
 ```
 python test_DND.py --save_images
