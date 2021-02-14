@@ -23,7 +23,7 @@ from pdb import set_trace as stx
 parser = argparse.ArgumentParser(description='Image Denoising using MPRNet')
 
 parser.add_argument('--input_dir', default='./Datasets/DND/', type=str, help='Directory of validation images')
-parser.add_argument('--result_dir', default='./results/DND/', type=str, help='Directory for results')
+parser.add_argument('--result_dir', default='./results/DND/test/', type=str, help='Directory for results')
 parser.add_argument('--weights', default='./pretrained_models/model_denoising.pth', type=str, help='Path to weights')
 parser.add_argument('--gpus', default='1', type=str, help='CUDA_VISIBLE_DEVICES')
 parser.add_argument('--save_images', action='store_true', help='Save denoised images in result directory')
