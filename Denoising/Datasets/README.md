@@ -1,5 +1,8 @@
-Download the SIDD-Medium dataset from https://www.eecs.yorku.ca/~kamel/sidd/dataset.php
+Download datasets from the provided links and place them in this directory. Your directory structure should look something like this
 
-Download SIDD Validation Data and Ground Truth from https://www.eecs.yorku.ca/~kamel/sidd/benchmark.php
+`SIDD` <br/>
+  `├──`[train](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php) <br/>
+  `└──`[test](https://www.eecs.yorku.ca/~kamel/sidd/benchmark.php)
 
-Download DND Benchmark Data from https://noise.visinf.tu-darmstadt.de/downloads/
+`DND` <br/>
+  `└──`[test](https://noise.visinf.tu-darmstadt.de/downloads/)
