@@ -4,8 +4,8 @@
 
 close all;clear all;
 
-datasets = {'GoPro'};
-% datasets = {'GoPro', 'HIDE', 'Realblur_J', 'Realblur_R'};
+% datasets = {'GoPro'};
+datasets = {'GoPro', 'HIDE'};
 num_set = length(datasets);
 
 for idx_set = 1:num_set
@@ -31,5 +31,7 @@ for idx_set = 1:num_set
     end
     qm_psnr = total_psnr / img_num;
     qm_ssim = total_ssim / img_num;
+    
+    fprintf('For %s dataset PSNR: %f SSIM: %f\n', datasets{idx_set}, qm_psnr, qm_ssim);
 
 end
