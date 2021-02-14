@@ -6,13 +6,13 @@
 - Download SIDD Validation Data and Ground Truth from [here](https://www.eecs.yorku.ca/~kamel/sidd/benchmark.php) and place them in `./Datasets/SIDD/test/`
 - Run
 ```
-python test_SIDD.py 
+python test_SIDD.py --save_images
 ```
 #### Testing on DND dataset
 - Download DND Benchmark Data from [here](https://noise.visinf.tu-darmstadt.de/downloads/) and place it in `./Datasets/DND/`
 - Run
 ```
-python test_DND.py 
+python test_DND.py --save_images
 ```
 
 #### To reproduce PSNR/SSIM scores of the paper, run MATLAB script
