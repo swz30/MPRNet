@@ -59,6 +59,7 @@ bb = info['boundingboxes']
 # Process data
 with torch.no_grad():
     for i in tqdm(range(50)):
+        Idenoised = np.zeros((20,), dtype=np.object)
         filename = '%04d.mat'%(i+1)
         filepath = os.path.join(args.input_dir, 'images_srgb', filename)
         img = h5py.File(filepath, 'r')
@@ -68,18 +69,16 @@ with torch.no_grad():
         ref = bb[0][i]
         boxes = np.array(info[ref]).T
 
-        restored = []
         for k in range(20):
             idx = [int(boxes[k,0]-1),int(boxes[k,2]),int(boxes[k,1]-1),int(boxes[k,3])]
             noisy_patch = torch.from_numpy(Inoisy[idx[0]:idx[1],idx[2]:idx[3],:]).unsqueeze(0).permute(0,3,1,2).cuda()
             restored_patch = model_restoration(noisy_patch)
-            restored_patch = torch.clamp(restored_patch[0],0,1).cpu().detach()
-            restored.append(restored_patch)
-        restored = torch.cat(restored).permute(0, 2, 3, 1).numpy()
+            restored_patch = torch.clamp(restored_patch[0],0,1).cpu().detach().permute(0, 2, 3, 1).squeeze(0).numpy()
+            Idenoised[k] = restored_patch
 
         # save denoised data
         sio.savemat(os.path.join(result_dir, filename),
-                    {"Idenoised": restored,
+                    {"Idenoised": Idenoised,
                      "israw": israw,
                      "eval_version": eval_version},
                     )
