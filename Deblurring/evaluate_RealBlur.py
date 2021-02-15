@@ -1,3 +1,7 @@
+## Multi-Stage Progressive Image Restoration
+## Syed Waqas Zamir, Aditya Arora, Salman Khan, Munawar Hayat, Fahad Shahbaz Khan, Ming-Hsuan Yang, and Ling Shao
+## https://arxiv.org/abs/2102.02808
+
 import os
 import numpy as np
 from glob import glob
