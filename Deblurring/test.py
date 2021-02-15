@@ -54,9 +54,8 @@ with torch.no_grad():
         torch.cuda.ipc_collect()
         torch.cuda.empty_cache()
 
-        gt        = data_test[0].cuda()
-        input_    = data_test[1].cuda()
-        filenames = data_test[2]
+        input_    = data_test[0].cuda()
+        filenames = data_test[1]
 
         # Padding in case images are not multiples of 8
         if dataset == 'RealBlur_J' or dataset == 'RealBlur_R':
