@@ -76,15 +76,14 @@ with torch.no_grad():
             restored_patch = torch.clamp(restored_patch[0],0,1).cpu().detach().permute(0, 2, 3, 1).squeeze(0).numpy()
             Idenoised[k] = restored_patch
 
+            if args.save_images:
+                save_file = os.path.join(result_dir_img, '%04d_%02d.png'%(i+1,k+1))
+                denoised_img = img_as_ubyte(restored_patch)
+                utils.save_img(save_file, denoised_img)
+
         # save denoised data
         sio.savemat(os.path.join(result_dir, filename),
                     {"Idenoised": Idenoised,
                      "israw": israw,
                      "eval_version": eval_version},
                     )
-
-        if args.save_images:
-            for k in range(20):
-                save_file = os.path.join(result_dir_img, '%04d_%02d.png'%(i+1,k+1))
-                denoised_img = img_as_ubyte(restored[k])
-                utils.save_img(save_file, denoised_img)
