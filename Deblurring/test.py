@@ -42,7 +42,7 @@ model_restoration = nn.DataParallel(model_restoration)
 model_restoration.eval()
 
 dataset = args.dataset
-rgb_dir_test = os.path.join(args.input_dir, dataset, 'test')
+rgb_dir_test = os.path.join(args.input_dir, dataset, 'test', 'input')
 test_dataset = get_test_data(rgb_dir_test, img_options={})
 test_loader  = DataLoader(dataset=test_dataset, batch_size=1, shuffle=False, num_workers=4, drop_last=False, pin_memory=True)
 
