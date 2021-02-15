@@ -60,7 +60,7 @@ Experiments are performed for different image processing tasks including, image 
 
 ### Image Denoising
 
-<p align="center"> <img src = "https://i.imgur.com/Wssu6Xu.png" width="500"> </p>
+<p align="center"> <img src = "https://i.imgur.com/Wssu6Xu.png" width="450"> </p>
 
 ## Citation
 If you use MPRNet, please consider citing:
