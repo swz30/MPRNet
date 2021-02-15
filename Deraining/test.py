@@ -44,7 +44,7 @@ datasets = ['Rain100L', 'Rain100H', 'Test100', 'Test1200', 'Test2800']
 # datasets = ['Rain100L']
 
 for dataset in datasets:
-    rgb_dir_test = os.path.join(args.input_dir, dataset)
+    rgb_dir_test = os.path.join(args.input_dir, dataset, 'input')
     test_dataset = get_test_data(rgb_dir_test, img_options={})
     test_loader  = DataLoader(dataset=test_dataset, batch_size=1, shuffle=False, num_workers=4, drop_last=False, pin_memory=True)
 
