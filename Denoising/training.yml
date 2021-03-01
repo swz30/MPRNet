@@ -24,7 +24,7 @@ TRAINING:
   RESUME: False
   TRAIN_PS: 128
   VAL_PS: 196
-  TRAIN_DIR: './Datasets/train' # path to training data
-  VAL_DIR: './Datasets/test'    # path to validation data
-  SAVE_DIR: './checkpoints'     # path to save models and images
+  TRAIN_DIR: './Datasets/SIDD/train' # path to training data
+  VAL_DIR: './Datasets/SIDD/val'     # path to validation data
+  SAVE_DIR: './checkpoints'          # path to save models and images
   # SAVE_IMAGES: False
