@@ -10,7 +10,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/single-image-deraining-on-test1200)](https://paperswithcode.com/sota/single-image-deraining-on-test1200?p=multi-stage-progressive-image-restoration)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/single-image-deraining-on-test2800)](https://paperswithcode.com/sota/single-image-deraining-on-test2800?p=multi-stage-progressive-image-restoration)
 
-# Multi-Stage Progressive Image Restoration
+# Multi-Stage Progressive Image Restoration (CVPR 2021)
 
 [Syed Waqas Zamir](https://scholar.google.es/citations?user=WNGPkVQAAAAJ&hl=en), [Aditya Arora](https://adityac8.github.io/), [Salman Khan](https://salman-h-khan.github.io/), [Munawar Hayat](https://scholar.google.com/citations?user=Mx8MbWYAAAAJ&hl=en), [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en), [Ming-Hsuan Yang](https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en), and [Ling Shao](https://scholar.google.com/citations?user=z84rLjoAAAAJ&hl=en)
 
@@ -44,9 +44,15 @@ conda install pytorch=1.1 torchvision=0.3 cudatoolkit=9.0 -c pytorch
 pip install matplotlib scikit-image opencv-python yacs joblib natsort h5py tqdm
 ```
 
-## Evaluation
+Install warmup scheduler
 
-Testing codes for deblurring, deraining and denoising are provided in their respective directories.
+```
+cd pytorch-gradual-warmup-lr; python setup.py install; cd ..
+```
+
+## Training and Evaluation
+
+Training and Testing codes for deblurring, deraining and denoising are provided in their respective directories.
 
 ## Results
 Experiments are performed for different image processing tasks including, image deblurring, image deraining and image denoising.
