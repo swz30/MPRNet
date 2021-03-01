@@ -1,3 +1,18 @@
+
+## Training
+- Download the [Datasets](Datasets/README.md)
+
+- Generate image patches from full-resolution training images of SIDD dataset
+```
+python generate_patches_SIDD.py --ps 256 --num_patches 300 --num_cores 10
+```
+- Train the model with default arguments by running
+
+```
+python train.py
+```
+
+
 ## Evaluation
 
 - Download the [model](https://drive.google.com/file/d/1LODPt9kYmxwU98g96UrRA0_Eh5HYcsRw/view?usp=sharing) and place it in `./pretrained_models/`
