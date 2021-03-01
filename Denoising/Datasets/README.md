@@ -2,6 +2,7 @@ Download datasets from the provided links and place them in this directory. Your
 
 `SIDD` <br/>
   `├──`[train](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php) <br/>
+  `├──`[val](https://drive.google.com/drive/folders/1S44fHXaVxAYW3KLNxK41NYCnyX9S79su?usp=sharing) <br/>
   `└──`[test](https://www.eecs.yorku.ca/~kamel/sidd/benchmark.php) <br/>
       `├──ValidationNoisyBlocksSrgb.mat` <br/>
       `└──ValidationGtBlocksSrgb.mat`
