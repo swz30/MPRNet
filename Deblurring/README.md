@@ -1,3 +1,11 @@
+## Training
+- Download the [Datasets](Datasets/README.md)
+
+- Train the model with default arguments by running
+
+```
+python train.py
+```
 
 ## Evaluation
 
