@@ -50,6 +50,17 @@ Install warmup scheduler
 cd pytorch-gradual-warmup-lr; python setup.py install; cd ..
 ```
 
+## Quick Run
+
+To test the pre-trained models of [Deblurring](https://drive.google.com/file/d/1QwQUVbk6YVOJViCsOKYNykCsdJSVGRtb/view?usp=sharing), [Deraining](https://drive.google.com/file/d/1O3WEJbcat7eTY6doXWeorAbQ1l_WmMnM/view?usp=sharing), [Denoising](https://drive.google.com/file/d/1LODPt9kYmxwU98g96UrRA0_Eh5HYcsRw/view?usp=sharing) on your own images, run 
+```
+python demo.py --task Task_Name --input_dir path_to_images --result_dir save_images_here
+```
+Here is an example to perform Deblurring:
+```
+python demo.py --task Deblurring --input_dir ./samples/input/ --result_dir ./samples/output/
+```
+
 ## Training and Evaluation
 
 Training and Testing codes for deblurring, deraining and denoising are provided in their respective directories.
