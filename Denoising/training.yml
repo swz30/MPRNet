@@ -23,7 +23,7 @@ TRAINING:
   VAL_AFTER_EVERY: 1
   RESUME: False
   TRAIN_PS: 128
-  VAL_PS: 196
+  VAL_PS: 256
   TRAIN_DIR: './Datasets/SIDD/train' # path to training data
   VAL_DIR: './Datasets/SIDD/val'     # path to validation data
   SAVE_DIR: './checkpoints'          # path to save models and images
