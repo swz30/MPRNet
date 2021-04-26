@@ -240,9 +240,9 @@ class MPRNet(nn.Module):
         super(MPRNet, self).__init__()
 
         act=nn.PReLU()
-        self.shallow_feat1 = nn.Sequential(conv(3, n_feat, kernel_size, bias=bias), CAB(n_feat,kernel_size, reduction, bias=bias, act=act))
-        self.shallow_feat2 = nn.Sequential(conv(3, n_feat, kernel_size, bias=bias), CAB(n_feat,kernel_size, reduction, bias=bias, act=act))
-        self.shallow_feat3 = nn.Sequential(conv(3, n_feat, kernel_size, bias=bias), CAB(n_feat,kernel_size, reduction, bias=bias, act=act))
+        self.shallow_feat1 = nn.Sequential(conv(in_c, n_feat, kernel_size, bias=bias), CAB(n_feat,kernel_size, reduction, bias=bias, act=act))
+        self.shallow_feat2 = nn.Sequential(conv(in_c, n_feat, kernel_size, bias=bias), CAB(n_feat,kernel_size, reduction, bias=bias, act=act))
+        self.shallow_feat3 = nn.Sequential(conv(in_c, n_feat, kernel_size, bias=bias), CAB(n_feat,kernel_size, reduction, bias=bias, act=act))
 
         # Cross Stage Feature Fusion (CSFF)
         self.stage1_encoder = Encoder(n_feat, kernel_size, reduction, act, bias, scale_unetfeats, csff=False)
@@ -258,7 +258,7 @@ class MPRNet(nn.Module):
         
         self.concat12  = conv(n_feat*2, n_feat, kernel_size, bias=bias)
         self.concat23  = conv(n_feat*2, n_feat+scale_orsnetfeats, kernel_size, bias=bias)
-        self.tail     = conv(n_feat+scale_orsnetfeats, 3, kernel_size, bias=bias)
+        self.tail     = conv(n_feat+scale_orsnetfeats, out_c, kernel_size, bias=bias)
 
     def forward(self, x3_img):
         # Original-resolution Image for Stage 3
