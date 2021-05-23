@@ -49,5 +49,5 @@ evaluate_GOPRO_HIDE.m
 
 #### To reproduce PSNR/SSIM scores of the paper on RealBlur dataset, run
 ```
-evaluate_RealBlur.m 
+evaluate_RealBlur.py 
 ```
