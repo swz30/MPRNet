@@ -20,6 +20,8 @@
 
 **Video Presentation**: https://www.youtube.com/watch?v=0SMTPiLw5Vw
 
+**Presentation Slides**: [pdf](https://drive.google.com/file/d/1-L43wj-VTppkrR9AL6cPBJI2RJi3Hc_z/view?usp=sharing)
+
 <hr />
 
 ### News
