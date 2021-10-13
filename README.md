@@ -79,10 +79,10 @@ python demo.py --task Deblurring --input_dir ./samples/input/ --result_dir ./sam
 Training and Testing codes for deblurring, deraining and denoising are provided in their respective directories.
 
 ## Results
-Experiments are performed for different image processing tasks including, image deblurring, image deraining and image denoising.
+Experiments are performed for different image processing tasks including, image deblurring, image deraining and image denoising. Images produced by MPRNet can be downloaded from Google Drive links: [Deblurring](https://drive.google.com/drive/folders/12jgrGdIh_lfiSsXyo-QicQuZYcLXp9rP?usp=sharing), [Deraining](https://drive.google.com/drive/folders/1IpF_jCGBhqsXN4f1vBNQ6DGpr7Pk6LdO?usp=sharing), and [Denoising](https://drive.google.com/drive/folders/1usbZKuYg8c7UrUml2bdZSbuxh_JrHW67?usp=sharing).
 
-### Image Deblurring
-
+<details>
+  <summary> <strong>Image Deblurring</strong> (click to expand) </summary>
 <table>
   <tr>
     <td> <img src = "https://i.imgur.com/UIwmY13.png" width="450"> </td>
@@ -92,15 +92,15 @@ Experiments are performed for different image processing tasks including, image 
     <td><p align="center"><b>Deblurring on Synthetic Datasets.</b></p></td>
     <td><p align="center"><b>Deblurring on Real Dataset.</b></p></td>
   </tr>
-</table>
+</table></details>
 
-### Image Deraining 
+<details>
+  <summary> <strong>Image Deraining</strong> (click to expand) </summary>
+<img src = "https://i.imgur.com/YVXWRJT.png" width="900"></details>
 
-<img src = "https://i.imgur.com/YVXWRJT.png" width="900">
-
-### Image Denoising
-
-<p align="center"> <img src = "https://i.imgur.com/Wssu6Xu.png" width="450"> </p>
+<details>
+  <summary> <strong>Image Denoising</strong> (click to expand) </summary>
+<p align="center"> <img src = "https://i.imgur.com/Wssu6Xu.png" width="450"> </p></details>
 
 ## Citation
 If you use MPRNet, please consider citing:
