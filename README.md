@@ -1,14 +1,4 @@
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/deblurring-on-gopro)](https://paperswithcode.com/sota/deblurring-on-gopro?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/deblurring-on-hide-trained-on-gopro)](https://paperswithcode.com/sota/deblurring-on-hide-trained-on-gopro?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/deblurring-on-realblur-r-trained-on-gopro)](https://paperswithcode.com/sota/deblurring-on-realblur-r-trained-on-gopro?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/deblurring-on-realblur-j-trained-on-gopro)](https://paperswithcode.com/sota/deblurring-on-realblur-j-trained-on-gopro?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/deblurring-on-realblur-r)](https://paperswithcode.com/sota/deblurring-on-realblur-r?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/deblurring-on-realblur-j-1)](https://paperswithcode.com/sota/deblurring-on-realblur-j-1?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/single-image-deraining-on-rain100h)](https://paperswithcode.com/sota/single-image-deraining-on-rain100h?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/single-image-deraining-on-rain100l)](https://paperswithcode.com/sota/single-image-deraining-on-rain100l?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/single-image-deraining-on-test100)](https://paperswithcode.com/sota/single-image-deraining-on-test100?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/single-image-deraining-on-test1200)](https://paperswithcode.com/sota/single-image-deraining-on-test1200?p=multi-stage-progressive-image-restoration)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stage-progressive-image-restoration/single-image-deraining-on-test2800)](https://paperswithcode.com/sota/single-image-deraining-on-test2800?p=multi-stage-progressive-image-restoration)
+
 
 # Multi-Stage Progressive Image Restoration (CVPR 2021)
 
