@@ -124,7 +124,7 @@ for epoch in range(start_epoch, opt.OPTIM.NUM_EPOCHS + 1):
         restored = model_restoration(input_)
 
         # Compute loss at each stage
-        loss = np.sum([criterion(torch.clamp(restored[j],0,1),target) for j in range(len(restored))])
+        loss = torch.sum([criterion(torch.clamp(restored[j],0,1),target) for j in range(len(restored))])
          
         loss.backward()
         optimizer.step()
